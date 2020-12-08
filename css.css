@@ -37,7 +37,14 @@ a {
     text-decoration: none;
     color: #05386B;
     font-family: 'Do Hyeon', sans-serif;
+    transition: all 0.2s ease-in;
 }
+
+a:hover {
+    color: #379683;
+
+}
+
 footer {
     text-align: center;
     color: #05386B;
