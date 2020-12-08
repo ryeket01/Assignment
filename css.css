@@ -6,11 +6,21 @@ body {
                          "nav"
                          "main"
                          "footer";
+    background-color: #8EE4AF;
                          
 }
 
 header {
     text-align: center;
+    background-color: #5CDB95;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #5CDB95;
+    font-size: 1.5em;
+    margin: 1em;
+    
 }
 
 .navigation {
@@ -20,6 +30,25 @@ header {
     grid-template-areas: "li li li li li";
     list-style: none;
     text-align: center;
+    
+    
+}
+a {
+    text-decoration: none;
+    color: #05386B;
+    font-family: 'Do Hyeon', sans-serif;
+}
+footer {
+    text-align: center;
+    color: #05386B;
 }
 
+h1 {
+    color: #EDF5E1;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+p {
+    font-family: 'Nanum Gothic', sans-serif;
+}
 
