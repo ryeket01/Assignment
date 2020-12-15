@@ -59,6 +59,83 @@ footer {
     color: #05386B;
 }
 
+
+.CVlayout {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 0.6em;
+    grid-auto-rows: minmax(6.2, auto);
+  }
+  .name {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    text-align: center;
+  }
+  .address {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    text-align: center;
+  }
+  .PS {
+    grid-column: 1;
+    grid-row: 3;
+    
+  }
+  .PStext {
+    grid-column: 2;
+    grid-row: 3;
+    
+  }
+  .WE {
+    grid-column: 1;
+    grid-row: 4;
+    
+  }
+  .WEtext {
+    grid-column: 2;
+    grid-row: 4;
+    
+  }
+  ul {
+    grid-column: 3;
+    grid-row: 3;
+    
+  }
+  .BB {
+  grid-column: 1;
+  grid-row: 5;
+  
+}
+.BBtext {
+  grid-column: 2;
+  grid-row: 5;
+  
+}
+
+.BE {
+    grid-column: 1;
+    grid-row: 6;
+    
+  }
+  
+  .BEtext {
+    grid-column: 2;
+    grid-row: 6;
+    
+  }
+
+  .IH {
+    grid-column: 1;
+    grid-row: 7;
+    
+  }
+
+  .IHtext {
+    grid-column: 2;
+    grid-row: 7;
+    
+  }
+
 h1 {
     color: #EDF5E1;
     font-family: 'Do Hyeon', sans-serif;
