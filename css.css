@@ -2,12 +2,11 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "header"
-                         "nav"
+    grid-template-areas: "nav"
+                         "header"
                          "main"
                          "footer";
     background-color: #8EE4AF;
-    margin: 1.5em;
                          
 }
 
@@ -15,12 +14,14 @@ header {
     text-align: center;
     background-color: #5CDB95;
     font-size: 2em;
+    background: linear-gradient(0deg, rgba(142,228,175,1) 20%, rgba(92,219,149,1) 100%);
 }
 
 nav {
+    grid-area: nav;
     background-color: #5CDB95;
     font-size: 1.5em;
-    margin: 1em;
+    background: linear-gradient(0deg, rgba(92,219,149,1) 50%, rgba(142,228,175,1) 100%);
     
 }
 
@@ -47,11 +48,9 @@ a:hover {
 }
 
 main {
-    margin: 1.5em;
+    margin: 0.5em;
     border-color:  #379683;
     border-width: 0.5em;
-    border-style: outset;
-    background-color: #5CDB95;
 }
 
 footer {
@@ -65,6 +64,7 @@ footer {
     grid-template-columns: repeat(3, 33%);
     gap: 0.6em;
     grid-auto-rows: minmax(6.2, auto);
+    background: radial-gradient(circle,  rgba(92,219,149,1) 10%,rgba(142,228,175,1) 70%);
   }
 
 .name {
@@ -84,9 +84,9 @@ footer {
 .PS {
     grid-column: 1;
     grid-row: 3;
-    text-align: center;
     font-size: 2em;
-    margin: 4em;
+    margin-top: 4em;
+
     
     
 }
@@ -94,13 +94,13 @@ footer {
 .PStext {
     grid-column: 2;
     grid-row: 3;
+    font-size: 1em;
     
 }
 
 .WE {
     grid-column: 1;
     grid-row: 4;
-    text-align: center;
     font-size: 2em;
     
 }
@@ -108,12 +108,14 @@ footer {
 .WEtext {
     grid-column: 2;
     grid-row: 4;
+    font-size: 1em;
     
 }
 
-ul {
+.CVlayout > ul {
     grid-column: 3;
     grid-row: 3;
+    font-size: 1em;
     
 }
 
@@ -126,7 +128,7 @@ ul {
 .BBtext {
   grid-column: 3;
   grid-row: 5;
-  
+  font-size: 1em;
 }
 
 .BE {
@@ -138,23 +140,26 @@ ul {
 .BEtext {
     grid-column: 3;
     grid-row: 6;
+    font-size: 1em;
     
 }
 
 .IH {
     grid-column: 1;
     grid-row: 7;
-    text-align: center;
     font-size: 2em;
-    margin: 3em;
+    margin-top: 3em;
     
 }
 
 .IHtext {
     grid-column: 2;
     grid-row: 7;
+    font-size: 1em;
     
 }
+
+
 
 h1 {
     color: #EDF5E1;
