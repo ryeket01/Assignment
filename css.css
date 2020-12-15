@@ -64,9 +64,31 @@ h1 {
     font-family: 'Do Hyeon', sans-serif;
 }
 
+h2 {
+    color: #05386B;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+h3 {
+    color: #05386B;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+main > ul {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+
+
 p {
     font-family: 'Nanum Gothic', sans-serif;
     text-align: center;
     font-size: 1.2em;
+}
+
+aside {
+    display: none;
 }
 
