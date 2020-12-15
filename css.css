@@ -10,6 +10,71 @@ body {
                          
 }
 
+
+
+form {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 2em;
+}
+
+label {
+    grid-column: 1;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2em;
+    font-style: unset;
+
+}
+
+input[type=text] {
+    grid-column: 1;
+    width: 490%;
+    height: 2em;
+    border: 0;
+    border-radius: 0.5em;
+    font-size: 1em;
+
+}
+
+textarea {
+    grid-column: 1;
+    border: 0;
+    width: 490%;
+    height: 4em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-family: 'Nanum Gothic', sans-serif; 
+}
+
+input::placeholder {
+    font-family: 'Nanum Gothic', sans-serif; 
+}
+
+input[type=submit] {
+    grid-column: 1;
+    height: 2em;
+    border: 0;
+    border-radius: 0.5em;
+    background-color: solid white;
+
+}
+
+input[type=submit]:hover {
+
+    background-color: #cccec9;
+
+}
+
+iframe {
+    grid-column: 2;
+    width: 95%;
+    border: 0;
+    border-radius: 0.5em;
+    
+}
+
+
+
 header {
     text-align: center;
     background-color: #5CDB95;
