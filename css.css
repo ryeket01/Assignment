@@ -334,32 +334,37 @@ p {
 img[src="Placeholder1.JPG"] {
     grid-area: img1;
     padding-left: 10em;
+    animation: 2s imgfly 
 }
 
 img[src="Placeholder2.JPG"] {
     grid-area: img2;
     padding-left: 4em;
-    
+    animation: 2s imgfly2
 }
 
 img[src="Placeholder3.JPG"] {
     grid-area: img3;
     padding-left: 10em;
+    animation: 2s imgfly 
 }
 
 img[src="Placeholder4.JPG"] {
     grid-area: img4;
     padding-left: 4em;
+    animation: 2s imgfly2 
 }
 
 img[src="Placeholder5.JPG"] {
     grid-area: img5;
     padding-left: 10em;
+    animation: 2s imgfly 
 }
 
 img[src="Placeholder6.JPG"] {
     grid-area: img6;
     padding-left: 4em;
+    animation: 2s imgfly2 
 }
 
 .PortfolioMain > img {
@@ -368,6 +373,24 @@ img[src="Placeholder6.JPG"] {
     max-width: 30em; 
     max-height: 20em;
     transition: all 1 ease;  
+}
+
+@keyframes imgfly {
+    from {
+        margin-left: -700px;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes imgfly2 {
+    from {
+        margin-left: 700px;
+    }
+    to {
+        margin-left: 0%;
+    }
 }
 
 .PortfolioMain > img:hover {
