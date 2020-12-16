@@ -325,34 +325,36 @@ p {
                          "img3 img4"
                          "img5 img6";
     grid-gap: 2em;
+    background: radial-gradient(circle,  rgba(92,219,149,1) 30%,rgba(142,228,175,1) 70%);
 }
 
 .PortfolioMain > p {
     grid-area: p;
+    font-size: 1em;
 }
 
 img[src="Placeholder1.JPG"] {
     grid-area: img1;
     padding-left: 10em;
-    animation: 2s imgfly 
+    animation: 1s imgfly 
 }
 
 img[src="Placeholder2.JPG"] {
     grid-area: img2;
     padding-left: 4em;
-    animation: 2s imgfly2
+    animation: 1s imgfly2
 }
 
 img[src="Placeholder3.JPG"] {
     grid-area: img3;
     padding-left: 10em;
-    animation: 2s imgfly 
+    animation: 1.5s imgfly 
 }
 
 img[src="Placeholder4.JPG"] {
     grid-area: img4;
     padding-left: 4em;
-    animation: 2s imgfly2 
+    animation: 1.5s imgfly2 
 }
 
 img[src="Placeholder5.JPG"] {
