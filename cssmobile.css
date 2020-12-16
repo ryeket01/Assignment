@@ -5,7 +5,7 @@ body {
     grid-template-areas: "header header header"
                          "main main aside"
                          "main main aside"
-                         "footer footer aside";    
+                         "footer footer footer";    
 }
 
 main {
@@ -14,7 +14,9 @@ main {
 
 aside {
     grid-area: aside;
-    display: block
+    display: block;
+    border-radius: 2em;
+    background-color: #5CDB95;
 }
 
 nav {
@@ -28,4 +30,88 @@ header {
 footer {
     grid-area: footer;
 }
+
+#hamburger
+ {
+   display: block;
+   position: relative;
+   top: 3em;
+   left: 3em;
+   
+   z-index: 1;
+ }
+ 
+ #hamburger a
+ {
+   text-decoration: none;
+   color: #05386B;
+   transition: color 0.3s ease;
+ }
+
+ 
+ #hamburger input
+ {
+   display: block;
+   width: 2.5em;
+   height: 2em;
+   position: absolute;
+   top: 3em;
+   left: 2em;
+   opacity: 0; 
+   z-index: 2; 
+   
+ }
+ 
+
+ #hamburger span
+ {
+   display: block;
+   width: 2.5em;
+   height: 0.30em;
+   margin-bottom: 0.5em;
+   position: relative;
+   background: #05386B;
+   border-radius: 0.2em;
+   top: 3em;
+   left: 2em;
+
+   z-index: 1;
+   
+ }
+ 
+ .mobileMenu
+ {
+   position: fixed;
+   width: 18em;
+   margin: -6em 0 0 -3em;
+   padding: 3em;
+   padding-top: 8em;
+   list-style: none;
+   display: none;
+   animation: 1s menufly;
+ }
+
+ @keyframes menufly {
+     from {
+         margin-left: 5em;
+     }
+     to {
+         margin-left: -3em;
+     }
+ }
+ 
+ .mobileMenu li
+ {
+   padding: 0.6em 0;
+   font-size: 1.3em;
+ }
+ 
+
+ #hamburger input:checked ~ ul
+ {
+   display: block;
+   
+ }
+
+
 
