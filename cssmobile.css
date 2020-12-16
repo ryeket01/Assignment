@@ -269,5 +269,35 @@ img[src="Placeholder6.JPG"] {
     animation: 2s imgfly
 }
 
+form {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "label"
+                         "input"
+                         "textarea"
+                         "submit"
+                         "iframe";
+
+    grid-gap: 1em;
+}
+
+label {
+    font-size: 1em;
+}
+
+textarea {
+    height: 12em;
+}
+
+iframe {
+    height: 12em;
+}
+
+.contact > p {
+    text-align: left;
+    font-size: 1.2em;
+}
+
 
 
