@@ -213,6 +213,61 @@ footer {
     grid-area: ihtext;
 }
 
+.PortfolioMain {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "p"
+                         "img1" 
+                         "img2"
+                         "img3" 
+                         "img4"
+                         "img5" 
+                         "img6";
+}
+
+.PortfolioMain > img {
+    height: auto; 
+    width: auto; 
+    max-width: 10em; 
+    max-height: 10em; 
+}
+
+img[src="Placeholder1.JPG"] {
+    grid-area: img1;
+    padding-left: 3em;
+    animation: 1s imgfly 
+}
+
+img[src="Placeholder2.JPG"] {
+    grid-area: img2;
+    padding-left: 3em;
+    animation: 1s imgfly
+}
+
+img[src="Placeholder3.JPG"] {
+    grid-area: img3;
+    padding-left: 3em;
+    animation: 1.5s imgfly 
+}
+
+img[src="Placeholder4.JPG"] {
+    grid-area: img4;
+    padding-left: 3em;
+    animation: 1.5s imgfly
+}
+
+img[src="Placeholder5.JPG"] {
+    grid-area: img5;
+    padding-left: 3em;
+    animation: 2s imgfly 
+}
+
+img[src="Placeholder6.JPG"] {
+    grid-area: img6;
+    padding-left: 3em;
+    animation: 2s imgfly
+}
 
 
 
