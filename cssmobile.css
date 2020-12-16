@@ -103,7 +103,7 @@ footer {
  .mobileMenu li
  {
    padding: 0.6em 0;
-   font-size: 1.3em;
+   font-size: 1.2em;
  }
  
 
@@ -133,6 +133,86 @@ footer {
 
     
 }
+
+.CVlayout {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "name"
+                         "address"
+                         "ps"
+                         "pstext"
+                         "ul"
+                         "we"
+                         "wetext"
+                         "bb"
+                         "bbtext"
+                         "be"
+                         "betext"
+                         "ih"
+                         "ihtext";
+  }
+
+
+.name {
+    grid-area: name;
+}
+ 
+.address {
+    grid-area: address;
+}
+
+.PS {
+    grid-area: ps;
+}
+
+.PStext {
+   grid-area: pstext;
+    
+}
+
+.WE {
+    
+    grid-area: we;
+}
+ 
+.WEtext {
+   
+    grid-area: wetext;
+}
+
+.CVlayout > ul {
+    grid-area: ul;
+    
+}
+
+.BB {
+    grid-area: bb;
+  
+}
+
+.BBtext {
+    grid-area: bbtext;
+}
+
+.BE {
+    grid-area: be;
+}
+  
+.BEtext {
+   grid-area: betext;
+    
+}
+
+.IH {
+    grid-area: ih;
+    
+}
+
+.IHtext {
+    grid-area: ihtext;
+}
+
 
 
 
