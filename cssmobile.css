@@ -74,9 +74,26 @@ footer {
    border-radius: 0.2em;
    top: 3em;
    left: 2em;
-
    z-index: 1;
    
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   
+ }
+
+
+ #hamburger input:checked ~ span
+ {
+   transform: rotate(90deg);
+ }
+ 
+ #hamburger input:checked ~ span:last-child
+ {
+    transform: translate(1em);
+ }
+ 
+ #hamburger input:checked ~ span:last-child
+ {
+    transform: translate(1em);
  }
  
  .mobileMenu
@@ -235,38 +252,47 @@ footer {
 
 img[src="Placeholder1.JPG"] {
     grid-area: img1;
-    padding-left: 3em;
+    margin-left: 3em;
     animation: 1s imgfly 
 }
 
 img[src="Placeholder2.JPG"] {
     grid-area: img2;
-    padding-left: 3em;
-    animation: 1s imgfly
+    margin-left: 3em;
+    animation: 1.2s imgfly
 }
 
 img[src="Placeholder3.JPG"] {
     grid-area: img3;
-    padding-left: 3em;
+    margin-left: 3em;
     animation: 1.5s imgfly 
 }
 
 img[src="Placeholder4.JPG"] {
     grid-area: img4;
-    padding-left: 3em;
-    animation: 1.5s imgfly
+    margin-left: 3em;
+    animation: 1.7s imgfly
 }
 
 img[src="Placeholder5.JPG"] {
     grid-area: img5;
-    padding-left: 3em;
+    margin-left: 3em;
     animation: 2s imgfly 
 }
 
 img[src="Placeholder6.JPG"] {
     grid-area: img6;
-    padding-left: 3em;
-    animation: 2s imgfly
+    margin-left: 3em;
+    animation: 2.2s imgfly
+}
+
+@keyframes imgfly {
+    from {
+        margin-left: -40em;
+    }
+    to {
+        margin-left: 3em;
+    }
 }
 
 form {
