@@ -133,12 +133,15 @@ a:hover {
 
 .IndexMain > h1 {
     grid-area: h1;
-    color: #05386B;
     font-size: 8em;
     margin-bottom: -0.1em;
+    background: linear-gradient(#05386B, #2c70b4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: 2s main;
 
 }
+
 
 @keyframes main {
     from {
@@ -335,37 +338,43 @@ p {
 
 img[src="Placeholder1.JPG"] {
     grid-area: img1;
-    padding-left: 10em;
+    margin-left: 10em;
+    border-radius: 1em;
     animation: 1s imgfly 
 }
 
 img[src="Placeholder2.JPG"] {
     grid-area: img2;
-    padding-left: 4em;
+    margin-left: 4em;
+    border-radius: 1em;
     animation: 1s imgfly2
 }
 
 img[src="Placeholder3.JPG"] {
     grid-area: img3;
-    padding-left: 10em;
+    margin-left: 10em;
+    border-radius: 1em;
     animation: 1.5s imgfly 
 }
 
 img[src="Placeholder4.JPG"] {
     grid-area: img4;
-    padding-left: 4em;
+    margin-left: 4em;
+    border-radius: 1em;
     animation: 1.5s imgfly2 
 }
 
 img[src="Placeholder5.JPG"] {
     grid-area: img5;
-    padding-left: 10em;
+    margin-left: 10em;
+    border-radius: 1em;
     animation: 2s imgfly 
 }
 
 img[src="Placeholder6.JPG"] {
     grid-area: img6;
-    padding-left: 4em;
+    margin-left: 4em;
+    border-radius: 1em;
     animation: 2s imgfly2 
 }
 
@@ -379,19 +388,19 @@ img[src="Placeholder6.JPG"] {
 
 @keyframes imgfly {
     from {
-        margin-left: -700px;
+        margin-left: -40em;
     }
     to {
-        margin-left: 0%;
+        margin-left: 10em;
     }
 }
 
 @keyframes imgfly2 {
     from {
-        margin-left: 700px;
+        margin-left: 40em;
     }
     to {
-        margin-left: 0%;
+        margin-left: 4em;
     }
 }
 
