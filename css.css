@@ -139,6 +139,7 @@ a:hover {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: 2s main;
+    
 
 }
 
@@ -325,15 +326,63 @@ p {
     grid-template-rows: auto;
     grid-template-areas: "p p"
                          "img1 img2"
+                         "p1 p2"
                          "img3 img4"
-                         "img5 img6";
-    grid-gap: 2em;
+                         "p3 p4"
+                         "img5 img6"
+                         "p5 p6";
+    grid-gap: 1.5em;
     background: radial-gradient(circle,  rgba(92,219,149,1) 30%,rgba(142,228,175,1) 70%);
 }
 
 .PortfolioMain > p {
     grid-area: p;
     font-size: 1em;
+    
+}
+
+.PortfolioMain > .p1 {
+    grid-area: p1;
+    margin-left: 3em;
+    font-size: 1.5em;
+    animation: 1s imgflyp
+}
+
+.PortfolioMain > .p2 {
+    grid-area: p2;
+    margin-right: 4em;
+    font-size: 1.5em;
+    animation: 1s imgfly2p
+}
+
+.PortfolioMain > .p3 {
+    grid-area: p3;
+    margin-left: 3em;
+    font-size: 1.5em;
+    animation: 1.5s imgflyp
+
+}
+
+.PortfolioMain > .p4 {
+    grid-area: p4;
+    margin-right: 4em;
+    font-size: 1.5em;
+    animation: 1.5s imgfly2p
+
+}
+
+.PortfolioMain > .p5 {
+    grid-area: p5;
+    margin-left: 3em;
+    font-size: 1.5em;
+    animation: 2s imgflyp
+}
+
+.PortfolioMain > .p6  {
+    grid-area: p6;
+    margin-right: 4em;
+    font-size: 1.5em;
+    animation: 2s imgfly2p
 }
 
 img[src="Placeholder1.JPG"] {
@@ -403,6 +452,29 @@ img[src="Placeholder6.JPG"] {
         margin-left: 4em;
     }
 }
+
+
+@keyframes imgflyp {
+    from {
+        margin-left: -40em;
+    }
+    to {
+        margin-left: 3em;
+    }
+}
+
+
+@keyframes imgfly2p {
+    from {
+        margin-right: -40em;
+    }
+    to {
+        margin-right: 4em;
+    }
+}
+
+
+
 
 .PortfolioMain > img:hover {
     transform: scale(1.2);
