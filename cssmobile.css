@@ -16,7 +16,12 @@ aside {
     grid-area: aside;
     display: block;
     border-radius: 2em;
+
     background-color: #5CDB95;
+}
+
+.IndexMain > h1 {
+    font-size: 6.5em;
 }
 
 nav {
@@ -86,23 +91,15 @@ footer {
    transform: rotate(90deg);
  }
  
- #hamburger input:checked ~ span:last-child
- {
-    transform: translate(1em);
- }
- 
- #hamburger input:checked ~ span:last-child
- {
-    transform: translate(1em);
- }
+
  
  .mobileMenu
  {
-   position: fixed;
+   position: absolute;
    width: 18em;
    margin: -6em 0 0 -3em;
    padding: 3em;
-   padding-top: 8em;
+   padding-top: 10em;
    list-style: none;
    display: none;
    animation: 1s menufly;
@@ -150,6 +147,8 @@ footer {
 
     
 }
+
+
 
 .CVlayout {
     display: grid;
@@ -235,12 +234,62 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "p"
-                         "img1" 
+                         "img1"
+                         "p1" 
                          "img2"
-                         "img3" 
+                         "p2"
+                         "img3"
+                         "p3" 
                          "img4"
-                         "img5" 
-                         "img6";
+                         "p4"
+                         "img5"
+                         "p5" 
+                         "img6"
+                         "p6";
+}
+
+.PortfolioMain > .p1 {
+    grid-area: p1;
+    margin-left: 0.2em;
+    font-size: 1em;
+    animation: 1s imgflyp
+}
+
+.PortfolioMain > .p2 {
+    grid-area: p2;
+    margin-right: 0.2em;
+    font-size: 1em;
+    animation: 1s imgfly2p
+}
+
+.PortfolioMain > .p3 {
+    grid-area: p3;
+    margin-left: 0.2em;
+    font-size: 1em;
+    animation: 1.5s imgflyp
+
+}
+
+.PortfolioMain > .p4 {
+    grid-area: p4;
+    margin-right: 0.2em;
+    font-size: 1em;
+    animation: 1.5s imgfly2p
+
+}
+
+.PortfolioMain > .p5 {
+    grid-area: p5;
+    margin-left: 0.2em;
+    font-size: 1em;
+    animation: 2s imgflyp
+}
+
+.PortfolioMain > .p6  {
+    grid-area: p6;
+    margin-right: 0.2em;
+    font-size: 1em;
+    animation: 2s imgfly2p
 }
 
 .PortfolioMain > img {
@@ -283,7 +332,7 @@ img[src="Placeholder5.JPG"] {
 img[src="Placeholder6.JPG"] {
     grid-area: img6;
     margin-left: 3em;
-    animation: 2.2s imgfly
+    animation: 2s imgfly
 }
 
 @keyframes imgfly {
@@ -292,6 +341,42 @@ img[src="Placeholder6.JPG"] {
     }
     to {
         margin-left: 3em;
+    }
+}
+
+@keyframes imgfly {
+    from {
+        margin-left: -40em;
+    }
+    to {
+        margin-left: 3em;
+    }
+}
+
+@keyframes imgfly {
+    from {
+        margin-left: -40em;
+    }
+    to {
+        margin-left: 3em;
+    }
+}
+
+@keyframes imgflyp {
+    from {
+        margin-left: -40em;
+    }
+    to {
+        margin-left: 0.2em;
+    }
+}
+
+@keyframes imgfly2p {
+    from {
+        margin-left: -40em;
+    }
+    to {
+        margin-right: 0.2em;
     }
 }
 
