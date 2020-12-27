@@ -42,7 +42,7 @@ footer {
    position: relative;
    top: 3em;
    left: 3em;
-   
+
    z-index: 1;
  }
  
@@ -81,10 +81,10 @@ footer {
    left: 2em;
    z-index: 1;
    
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   transition: transform 0.5s cubic-bezier(.42,0,.58,1);
    
  }
-
+ 
 
  #hamburger input:checked ~ span
  {
@@ -388,7 +388,7 @@ form {
                          "input"
                          "textarea"
                          "submit"
-                         "iframe";
+                         ;
 
     grid-gap: 1em;
 }
@@ -401,9 +401,9 @@ textarea {
     height: 12em;
 }
 
-iframe {
-    height: 12em;
-}
+
+
+
 
 .contact > p {
     text-align: left;
