@@ -484,3 +484,23 @@ aside {
     display: none;
 }
 
+.SRmain > h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em;
+
+}
+
+.SRmain > p {
+    text-align: left;
+    padding: 0.5em;
+}
+
+.SRmain > .RL {
+    text-align: center;
+}
+
+.SRmain > .GH {
+    text-align: center;
+}
+
