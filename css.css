@@ -126,19 +126,19 @@ a:hover {
                          "p img";
     margin: 0.5em;
     background: radial-gradient(circle,  rgba(92,219,149,1) 5%,rgba(142,228,175,1) 30%);
-}
-
-.IndexMain > h1 {
-    grid-area: h1;
-    font-size: 8em;
-    margin-bottom: -0.1em;
-    background: linear-gradient(#05386B, #2c70b4);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: 2s main;
     
 
 }
+
+.IndexMain h1 {
+    grid-area: h1;
+    font-size: 8em;
+    margin-bottom: -0.1em;
+    animation: 2s main;
+    color: #05386B;
+}
+
+
 
 
 @keyframes main {
@@ -429,7 +429,7 @@ img[src="Placeholder6.JPG"] {
     width: auto; 
     max-width: 30em; 
     max-height: 20em;
-    transition: all 1 ease;  
+    transition: all 0.5s ease;  
 }
 
 @keyframes imgfly {
