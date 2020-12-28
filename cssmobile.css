@@ -403,12 +403,35 @@ textarea {
 
 
 
-
-
 .contact > p {
     text-align: left;
     font-size: 1.2em;
 }
 
 
+
+.validation {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                         "cov"
+                         "context" 
+                         "cvv"
+                         "cvvtext"
+                         "inv"
+                         "idvtext"
+                         "pov"
+                         "povtext";
+    grid-gap: 1.5em;
+
+}
+
+.validation > img {
+    height: auto; 
+    width: auto; 
+    max-width: 17em; 
+    max-height: 20em;
+    border-radius: 0.5em;
+}
 
