@@ -484,6 +484,8 @@ aside {
     display: none;
 }
 
+
+
 .SRmain > h2 {
     font-size: 2em;
     text-align: center;
@@ -504,3 +506,64 @@ aside {
     text-align: center;
 }
 
+.validation > img {
+    height: auto; 
+    width: auto; 
+    max-width: 40em; 
+    max-height: 30em;
+    border-radius: 0.5em;
+    
+}
+
+.validation {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                         "cvv cov"
+                         "cvvtext context "
+                         "inv pov"
+                         "idvtext povtext";
+    grid-gap: 1em;
+
+}
+
+.cvvtext {
+    grid-area: cvvtext;
+
+}
+
+.idvtext {
+    grid-area: idvtext;
+
+}
+
+.context {
+    grid-area: context;
+
+}
+
+.povtext {
+    grid-area: povtext;
+
+}
+
+img[src="contactvalid.png"] {
+    grid-area: cov;
+    
+}
+
+img[src="cvvalid.png"] {
+    grid-area: cvv;
+    margin-left: 0.5em;
+}
+
+img[src="indexvalid.png"] {
+    grid-area: inv;
+    
+}
+
+img[src="portfoliovalid.png"] {
+    grid-area: pov;
+    margin-left: 0.5em;
+}
