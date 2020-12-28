@@ -523,7 +523,9 @@ aside {
                          "cvv cov"
                          "cvvtext context "
                          "inv pov"
-                         "idvtext povtext";
+                         "idvtext povtext"
+                         "css csm"
+                         "csstext csmtext";
     grid-gap: 1em;
 
 }
@@ -548,6 +550,16 @@ aside {
 
 }
 
+.csstext {
+    grid-area: csstext;
+
+}
+
+.csmtext {
+    grid-area: csmtext;
+
+}
+
 img[src="contactvalid.png"] {
     grid-area: cov;
     
@@ -565,5 +577,15 @@ img[src="indexvalid.png"] {
 
 img[src="portfoliovalid.png"] {
     grid-area: pov;
+    margin-left: 0.5em;
+}
+
+img[src="cssvalid.png"] {
+    grid-area: css;
+    margin-left: 0.5em;
+}
+
+img[src="cssmobilevalid.png"] {
+    grid-area: csm;
     margin-left: 0.5em;
 }
