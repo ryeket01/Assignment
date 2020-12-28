@@ -422,7 +422,13 @@ textarea {
                          "inv"
                          "idvtext"
                          "pov"
-                         "povtext";
+                         "povtext"
+                         "css"
+                         "csstext"
+                         "csm"
+                         "csmtext"
+                         "srv"
+                         "srtext";
     grid-gap: 1.5em;
 
 }
@@ -435,3 +441,6 @@ textarea {
     border-radius: 0.5em;
 }
 
+img[src="sitereportvalid.png"] {
+    margin-left: 0.5em;
+}
