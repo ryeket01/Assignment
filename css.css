@@ -525,7 +525,9 @@ aside {
                          "inv pov"
                          "idvtext povtext"
                          "css csm"
-                         "csstext csmtext";
+                         "csstext csmtext"
+                         "srv srv"
+                         "srtext srtext";
     grid-gap: 1em;
 
 }
@@ -560,6 +562,10 @@ aside {
 
 }
 
+.srtext {
+    grid-area: srtext;
+}
+
 img[src="contactvalid.png"] {
     grid-area: cov;
     
@@ -588,4 +594,9 @@ img[src="cssvalid.png"] {
 img[src="cssmobilevalid.png"] {
     grid-area: csm;
     margin-left: 0.5em;
+}
+
+img[src="sitereportvalid.png"] {
+    grid-area: srv;
+    margin-left: 23em;
 }
